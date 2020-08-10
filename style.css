@@ -4,3 +4,73 @@
     font-style: italic;
     
 } 
+.load{
+    animation: slide 10s;
+}
+.slider{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    animation: slide 15s ease-in-out infinite;
+    background-size: auto;
+}
+.content{
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #fff;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+}
+.principal{
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    transition: translate(-50%,-50%);
+    text-align: center;
+}
+.principal h1{
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+.principal p{
+    font-size: 20px;
+    
+}
+
+
+@keyframes slide{
+    0%, 100% {background-image:url("Join.jpg");}
+    30%{background-image:url("breastcancer_walk.jpg");}
+    50%{background-image:url("yah.png");}
+    100%{background-image:url("920x920.jpg");}
+}
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
